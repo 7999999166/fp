@@ -14,7 +14,7 @@
         <div class="col">
             <div><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" />
                 <div class="py-4">
-                    <a href="/Dustbins"><h4>Dustbins</h4></a>
+                    <a href="/dustbins"><h4>Dustbins</h4></a>
                     <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
                 </div>
             </div>
