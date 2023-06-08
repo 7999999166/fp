@@ -211,6 +211,24 @@
             "ProductName": "Barni",
             "Image": "./favicon.png",
             "Price": 5400
+        },
+          {
+            "UrlName": "A001",
+            "ProductName": "A-001",
+            "Image": "./favicon.png",
+            "Price": 1200
+        },
+        {
+            "UrlName": "A002",
+            "ProductName": "A-002",
+            "Image": "./favicon.png",
+            "Price": 2300
+        },
+        {
+            "UrlName": "A003",
+            "ProductName": "A-003",
+            "Image": "./favicon.png",
+            "Price": 5400
         }
        
     ]
