@@ -22,8 +22,7 @@
         <nav aria-label="breadcrumb">
   <ol class="breadcrumb  jik">
     <li class="breadcrumb-item"><a href="/products">Products</a></li>
-    <li class="breadcrumb-item" on:click={amaze}><a href="/{productInfo.Group}">{productInfo.Group}</a></li>
-    <li class="breadcrumb-item"><a href="">{productInfo.ProductName}</a></li>
+    
   </ol>
 </nav>
 
@@ -38,7 +37,7 @@
         <div class="col-md-6 d-md-flex align-items-md-center">
             <div style="max-width: 350px;">
                 <h2 class="text-uppercase fw-bold">{productInfo.ProductName}</h2>
-                <p class="my-3">Tincidunt laoreet leo, adipiscing taciti tempor. Primis senectus sapien, risus donec ad fusce augue <span class="ziss">₹ {productInfo.Price}</span></p><a class="btn btn-primary btn-lg me-2" role="button" href="#" on:click={teru}>Buy Now</a>
+                <p class="my-3">Tincidunt laoreet leo, adipiscing taciti tempor. Primis senectus sapien, risus donec ad fusce augue <span class="ziss">₹ {productInfo.Price}</span></p><a class="btn btn-primary btn-lg me-2" role="button" href="#">Buy Now</a>
             </div>
         </div>
     </div>

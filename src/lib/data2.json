@@ -4,15 +4,15 @@
             "UrlName": "PlainPlanter",
             "ProductName": "Plain Planter",
             "Image": "./favicon.png",
-            "Price": 1800,
-            "Group": "Planters"
+            "Price": 1800
+    
         },
         {
             "UrlName": "PerforatedPlanter",
             "ProductName": "Perforated Planter",
             "Image": "./favicon.png",
-            "Price": 9000,
-            "Group": "Planters"
+            "Price": 9000
+            
         },
         {
             "UrlName": "MaharajaBucket",
