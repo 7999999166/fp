@@ -6,7 +6,7 @@
   
 
 
-  if (items == 'Dustbins'){ myProducts = myData.Dustbins ; }
+  if (items == 'dustbins'){ myProducts = myData.Dustbins ; }
   if (items == 'Containers'){ myProducts = myData.Containers ; }
   if (items == 'Planters'){ myProducts = myData.Planters ; }
   if (items == 'Buckets'){ myProducts = myData.Buckets ; }

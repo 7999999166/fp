@@ -114,7 +114,7 @@
             "Images": "./favicon.png"
         }
     ],
-    "Dustbins": [
+    "dustbins": [
         {
             "UrlName": "SwingBin",
             "ProductName": "Swing Bin",
