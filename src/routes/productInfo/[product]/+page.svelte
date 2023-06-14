@@ -18,16 +18,7 @@
 
 <div>
 
-    <div class="container">
-        <nav aria-label="breadcrumb">
-  <ol class="breadcrumb  jik">
-    <li class="breadcrumb-item"><a href="/products">Products</a></li>
     
-  </ol>
-</nav>
-
-
-    </div>
 
     <div class="container py-4 py-xl-5">
     <div class="row gy-4 gy-md-0">
@@ -37,7 +28,7 @@
         <div class="col-md-6 d-md-flex align-items-md-center">
             <div style="max-width: 350px;">
                 <h2 class="text-uppercase fw-bold">{productInfo.ProductName}</h2>
-                <p class="my-3">Tincidunt laoreet leo, adipiscing taciti tempor. Primis senectus sapien, risus donec ad fusce augue <span class="ziss">₹ {productInfo.Price}</span></p><a class="btn btn-primary btn-lg me-2" role="button" href="#">Buy Now</a>
+                <p class="my-3">Tincidunt laoreet leo, adipiscing taciti tempor. Primis senectus sapien, risus donec ad fusce augue <span class="ziss">₹ {productInfo.Price}</span></p><a class="btn btn-primary btn-lg me-2" role="button" href="#">Add To Cart</a>
             </div>
         </div>
     </div>
@@ -105,10 +96,7 @@
     font-size: 1.5rem;
     font-weight: bold;
  }  
-   .jik{
-    margin-top: 8%;
-    color: blue;
-  }
+ 
    
   a{
     text-decoration: none;

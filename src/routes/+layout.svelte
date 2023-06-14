@@ -7,6 +7,7 @@
        <link rel="stylesheet" href="/bootstrap.min.css"> 
        <link rel="stylesheet" href="/w3.css"> 
        <script src="/qrcode.min.js"></script> 
+       <script src="/axios.min.js"></script>
      </svelte:head>
 
 <div class="app">

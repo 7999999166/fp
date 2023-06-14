@@ -1,5 +1,5 @@
 {
-    "AirCooler": [
+    "airCooler": [
         {
             "UrlName": "A001",
             "ProductName": "A-001",
@@ -16,7 +16,7 @@
             "Images": "./favicon.png"
         }
     ],
-    "Planters": [
+    "planters": [
         {
             "UrlName": "PlainPlanter",
             "ProductName": "Plain Planter",
@@ -28,7 +28,7 @@
             "Images": "./favicon.png"
         }
     ],
-    "Buckets": [
+    "buckets": [
         {
             "UrlName": "MaharajaBucket",
             "ProductName": "Maharaja Bucket",
@@ -40,7 +40,7 @@
             "Images": "./favicon.png"
         }
     ],
-    "MistFan": [
+    "mistFan": [
         {
             "UrlName": "M001",
             "ProductName": "M-001",
@@ -57,7 +57,7 @@
             "Images": "./favicon.png"
         }
     ],
-    "InsulatedContainers": [
+    "insulatedContainers": [
         {
             "UrlName": "TeaPot",
             "ProductName": "TeaPot",
@@ -74,7 +74,7 @@
             "Images": "./favicon.png"
         }
     ],
-    "CommercialCookware": [
+    "commercialCookware": [
         {
             "UrlName": "SSKhadhai",
             "ProductName": "SS Khadhai",
@@ -101,7 +101,7 @@
             "Images": "./favicon.png"
         }
     ],
-    "DomesticCookware": [
+    "domesticCookware": [
       
         {
             "UrlName": "SSDeepKadhai",
@@ -176,7 +176,7 @@
             "Images": "./favicon.png"
         }
     ],
-    "Containers": [
+    "containers": [
         {
             "UrlName": "RationDabba",
             "ProductName": "Ration Dabba",

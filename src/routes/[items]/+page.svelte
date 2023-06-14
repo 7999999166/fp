@@ -7,14 +7,14 @@
 
 
   if (items == 'dustbins'){ myProducts = myData.dustbins ; }
-  if (items == 'Containers'){ myProducts = myData.Containers ; }
-  if (items == 'Planters'){ myProducts = myData.Planters ; }
-  if (items == 'Buckets'){ myProducts = myData.Buckets ; }
-  if (items == 'MistFan'){ myProducts = myData.MistFan ; items = "Mist Fan" }
-  if (items == 'InsulatedContainers'){ myProducts = myData.InsulatedContainers ; items = 'Insulated Containers' ;}
-  if (items == 'CommercialCookware'){ myProducts = myData.CommercialCookware ;  items = "Commercial Cookware"}
-  if (items == 'DomesticCookware'){ myProducts = myData.DomesticCookware ;  items = "Domestic Cookware"}
-  if (items == 'AirCooler'){ myProducts = myData.AirCooler ;  items = "Air Cooler"}
+  if (items == 'containers'){ myProducts = myData.containers ; }
+  if (items == 'planters'){ myProducts = myData.planters ; }
+  if (items == 'buckets'){ myProducts = myData.buckets ; }
+  if (items == 'mistFan'){ myProducts = myData.mistFan ; items = "Mist Fan" }
+  if (items == 'insulatedContainers'){ myProducts = myData.insulatedContainers ; items = 'Insulated Containers' ;}
+  if (items == 'commercialCookware'){ myProducts = myData.commercialCookware ;  items = "Commercial Cookware"}
+  if (items == 'comesticCookware'){ myProducts = myData.domesticCookware ;  items = "Domestic Cookware"}
+  if (items == 'airCooler'){ myProducts = myData.airCooler ;  items = "Air Cooler"}
    
 
 
@@ -38,7 +38,7 @@
     <div class="container py-4 py-xl-5 maika">
     <div class="row mb-5">
         <div class="col-md-8 col-xl-6 text-center mx-auto">
-            <h2>{items}</h2>
+            <h2>{items.toUpperCase()}</h2>
             <p>Curae hendrerit donec commodo hendrerit egestas tempus, turpis facilisis nostra nunc. Vestibulum dui eget ultrices.</p>
         </div>
     </div>
