@@ -1,5 +1,7 @@
 <script>
-	
+    import { orderTotal } from "../store.js";
+    import {cartQtyTotal} from "../store2.js";
+    	
 </script>
 
 <svelte:head>
@@ -19,12 +21,22 @@
                 <li class="nav-item"><a class="nav-link" href="/products">Products</a></li>
                 <li class="nav-item"><a class="nav-link" href="/aboutUs">About Us</a></li>
             </ul>
-            <div class="d-md-none my-2"><a class="btn btn-light me-2" role="button" href="/login">Login</a><a  class="btn btn-primary" role="button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Cart <span class="w3-badge w3-red">0</span></a></div>
+            <div class="d-md-none my-2"><a class="btn btn-light me-2" role="button" href="/login">Login</a><a  class="btn btn-primary" role="button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Cart <span class="w3-badge w3-red">{$cartQtyTotal}</span></a></div>
         </div>
-        <div class="d-none d-md-block"><a class="btn btn-light me-2" role="button" href="/login">Login</a><a  class="btn btn-primary" role="button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Cart <span class="w3-badge w3-red">0</span></a></div>
+        <div class="d-none d-md-block"><a class="btn btn-light me-2" role="button" href="/login">Login</a><a  class="btn btn-primary" role="button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Cart <span class="w3-badge w3-red">{$cartQtyTotal}</span></a></div>
     </div>
 </nav>
 <div class="mimi"></div>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <h1>Cart total - {$orderTotal}</h1>
+  </div>
+</div>
 
 
 

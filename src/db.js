@@ -2,6 +2,6 @@
 
    const db = new Dexie('myDatabase');
 
-   db.version(1).stores({ friends: '++id, name, age' });
+   db.version(1).stores({ order: '++id , Productname , Price , Quantity , Amount ' });
 
    export {db};

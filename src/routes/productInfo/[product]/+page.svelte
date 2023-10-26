@@ -1,6 +1,9 @@
 <script>
     import {page} from '$app/stores';
     import mydata from "$lib/data2.json" ;
+    import {db} from '../../../db.js';
+    import {orderTotal} from "../../../store.js";
+    import {cartQtyTotal} from "../../../store2.js";
 
     var mrf = mydata.ProductItem ;
 
@@ -13,6 +16,22 @@
 
     function jamal() { setTimeout(function(){location.reload() ;},500); }
     function amaze(){location.assign(location.host); jamal() ;}
+
+    async function addToOrder(){await db.order.add({
+		Productname: 'Camilla',
+		Price: 25,
+		Quantity: 'East 13:th Street',
+		Amount: 1
+	});
+    addToTotal();
+    addToCartQty();
+    }
+
+    async function addToTotal(){const orders = await db.order.toArray() ; console.log(orders) ;
+     $orderTotal = orders.reduce(function(rtotal,item){return rtotal + item.Price },0); console.log($orderTotal) ;}
+
+     async function addToCartQty(){const orders = await db.order.toArray() ; 
+     $cartQtyTotal = orders.reduce(function(rtotal,item){return rtotal + item.Amount },0);}
   
 </script>
 
@@ -28,7 +47,7 @@
         <div class="col-md-6 d-md-flex align-items-md-center">
             <div style="max-width: 350px;">
                 <h2 class="text-uppercase fw-bold">{productInfo.ProductName}</h2>
-                <p class="my-3">Tincidunt laoreet leo, adipiscing taciti tempor. Primis senectus sapien, risus donec ad fusce augue <span class="ziss">₹ {productInfo.Price}</span></p><a class="btn btn-primary btn-lg me-2" role="button" href="#">Add To Cart</a>
+                <p class="my-3">Tincidunt laoreet leo, adipiscing taciti tempor. Primis senectus sapien, risus donec ad fusce augue <span class="ziss">₹ {productInfo.Price}</span></p><a class="btn btn-primary btn-lg me-2" role="button" href="#" on:click={addToOrder}>Add To Cart</a>
             </div>
         </div>
     </div>
