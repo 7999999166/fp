@@ -42,11 +42,11 @@
     <div class="container py-4 py-xl-5">
     <div class="row gy-4 gy-md-0">
         <div class="col-md-6">
-            <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;" src="/PedalBin.jpg" /></div>
+            <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;" src="https://asset.cloudinary.com/kanik/c2a87ab54e1d9fc69348bd355cba6555" /></div>
         </div>
         <div class="col-md-6 d-md-flex align-items-md-center">
             <div style="max-width: 350px;">
-                <h2 class="text-uppercase fw-bold">{productInfo.ProductName}</h2>
+                <h2 class="text-uppercase fw-bold">PedalBin</h2>
                 <p class="my-3">Tincidunt laoreet leo, adipiscing taciti tempor. Primis senectus sapien, risus donec ad fusce augue <span class="ziss">₹ {productInfo.Price}</span></p><a class="btn btn-primary btn-lg me-2" role="button" href="#" on:click={addToOrder}>Add To Cart</a>
             </div>
         </div>
