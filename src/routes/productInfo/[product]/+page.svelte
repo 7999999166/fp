@@ -42,7 +42,8 @@
     <div class="container py-4 py-xl-5">
     <div class="row gy-4 gy-md-0">
         <div class="col-md-6">
-            <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;" src="https://asset.cloudinary.com/kanik/c2a87ab54e1d9fc69348bd355cba6555" /></div>
+            <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;" src="/PedalBin.jpg
+            " /></div>
         </div>
         <div class="col-md-6 d-md-flex align-items-md-center">
             <div style="max-width: 350px;">
