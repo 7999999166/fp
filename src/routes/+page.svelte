@@ -18,7 +18,7 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col-md-8 col-xl-6 text-center mx-auto">
-                <h2>Featured Products</h2>
+                <h2>Featured Products{process.env.KANJURA}</h2>
                 <p>Curae hendrerit donec commodo hendrerit egestas tempus, turpis facilisis nostra nunc. Vestibulum dui eget ultrices.</p>
             </div>
         </div>
