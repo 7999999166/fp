@@ -1,7 +1,7 @@
 <script>
 
     var loius  ;
-    function help (){loius = process.env.KIOP ;}
+    function help (){loius = process.env.KIOP ; console.log(loius) ;}
 
     import {db} from '../../db.js';
     import {orderTotal} from "../../store.js";
