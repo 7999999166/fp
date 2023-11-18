@@ -1,7 +1,6 @@
 <script>
 
-    var loius  ;
-    function help (){loius = process.env.KIOP ; console.log(loius) ;}
+    
 
     import {db} from '../../db.js';
     import {orderTotal} from "../../store.js";
@@ -36,7 +35,7 @@
     <div class="container py-4 py-xl-5">
     <div class="row mb-5">
         <div class="col-md-8 col-xl-6 text-center mx-auto">
-            <h2 on:click={help}>Product Catagories - {loius}</h2>
+            <h2 on:click={help}>Product Catagories</h2>
             <p>Curae hendrerit donec commodo hendrerit egestas tempus, turpis facilisis nostra nunc. Vestibulum dui eget ultrices.</p>
         </div>
     </div>
