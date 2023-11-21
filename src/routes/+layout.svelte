@@ -36,19 +36,33 @@
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title xbn" id="offcanvasRightLabel">Cart Items</h5>
+    <h5 class="offcanvas-title xbn armaya" id="offcanvasRightLabel">Cart Items</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    <ul>
-      {#each order as { Productname , Price }, i}
-		<li>
-			<h1>{Productname} - {Price}</h1> 
-		</li>
-	{/each}
-    </ul>
-    <h1 class="zacuzi">Cart total - {$orderTotal}</h1>
-    <button class="btn btn-danger zacuzi">Checkout</button>
+    <table class="w3-table">
+  <tr>
+    <th>Name</th>
+    <th>Price</th> 
+  </tr>
+      {#each order as { Productname , Price }}
+		  <tr>
+			<td>{Productname}</td> 
+      <td>{Price}</td> 
+		   </tr>
+	    {/each}
+
+    <tr>
+    <td class="w3-green">Cart Total</td>
+    <td class="w3-green">{$orderTotal}</td> 
+  </tr>
+  
+</table>
+    
+   <div class="muio">
+    <button class="btn btn-danger">Checkout</button>
+   </div>
+    
   </div>
 </div>
 
@@ -97,7 +111,15 @@
 }
 
 .zacuzi{
-  text-align: center;
+  font-weight: bolder;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: red;
+}
+.muio{
+  margin-left: 33%;
+  margin-top :20px;
+}
+.armaya{
   font-weight: bolder;
 }
 
