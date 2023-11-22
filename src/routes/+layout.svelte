@@ -59,8 +59,8 @@
   
 </table>
     
-   <div class="muio">
-    <button class="btn btn-danger">Checkout</button>
+   <div class="muio w3-center">
+    <button class="btn btn-danger w3-hover-indigo">Checkout</button>
    </div>
     
   </div>
@@ -110,13 +110,9 @@
   text-align: center;
 }
 
-.zacuzi{
-  font-weight: bolder;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: red;
-}
+
 .muio{
-  margin-left: 33%;
+  
   margin-top :20px;
 }
 .armaya{
