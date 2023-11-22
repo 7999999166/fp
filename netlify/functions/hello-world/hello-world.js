@@ -14,10 +14,10 @@
      var email = 'mahesh@gmail.com' ;
      var salt = process.env.SALT ;
      var myValue = key+txnid+amount+productinfo+firstname+phone+email+salt ;
-    //  var hash = crypto.createHash('sha512').update(myValue).digest('hex');
+     var hash = crypto.createHash('sha512').update(myValue).digest('hex');
      return {
            statusCode : 200 ,
-           body : JSON.stringify(myValue) 
+           body : JSON.stringify(hash) 
          };
 }
 
