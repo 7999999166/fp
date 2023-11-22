@@ -13,10 +13,10 @@
      var phone = '9090909090';
      var email = 'mahesh@gmail.com' ;
      var myValue = key+txnid+amount+productinfo+firstname+phone+email ;
-    //  var hash = crypto.createHash('sha512').update(name).digest('hex');
+     var hash = crypto.createHash('sha512').update(myValue).digest('hex');
      return {
            statusCode : 200 ,
-           body : JSON.stringify(myValue) 
+           body : JSON.stringify(hash) 
          };
 }
 
