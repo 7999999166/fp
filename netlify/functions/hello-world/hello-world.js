@@ -6,7 +6,7 @@
 
 
      var key = '2PBP7IABZ2' ;
-     var txnid = 'braitsch';
+     var txnid = 'braitsch00237';
      var amount = '2400' ;
      var productinfo = 'appleWatch' ;
      var firstname = 'sandeep' ;
@@ -17,7 +17,7 @@
     //  var hash = crypto.createHash('sha512').update(myValue).digest('hex');
      return {
            statusCode : 200 ,
-           body : JSON.stringify(hash) 
+           body : JSON.stringify(myValue) 
          };
 }
 
