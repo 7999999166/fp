@@ -1,15 +1,22 @@
 
-var crypto = require('crypto');
+     var crypto = require('crypto');
 
 
-exports.handler = async function (event){
+     exports.handler = async function (event){
 
 
-     var name = 'braitsch';
-     var hash = crypto.createHash('sha512').update(name).digest('hex');
-   return {
+     var key = '2PBP7IABZ2' ;
+     var txnid = 'braitsch';
+     var amount = '2400' ;
+     var productinfo = 'appleWatch' ;
+     var firstname = 'sandeep' ;
+     var phone = '9090909090';
+     var email = 'mahesh@gmail.com' ;
+     var myValue = key+txnid+amount+productinfo+firstname+phone+email ;
+    //  var hash = crypto.createHash('sha512').update(name).digest('hex');
+     return {
            statusCode : 200 ,
-           body : JSON.stringify(hash) 
+           body : JSON.stringify(myValue) 
          };
 }
 
