@@ -1,7 +1,8 @@
 <script>
     async function aaa(){var xxx = new Promise (async function(resolve){var zash = await axios.get('https://akhilsteel.in/.netlify/functions/hello-world') ;  resolve(zash); }); return xxx ;}
     async function myMtain(){var hash = await aaa() ;
-                             console.log(hash);}
+                             var mash = hash.data ;
+                             console.log(mash);}
 
 
   
