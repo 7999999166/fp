@@ -44,17 +44,20 @@
     <table class="w3-table">
   <tr>
     <th>Name</th>
+    <th>QTY</th>
     <th>Price</th> 
   </tr>
-      {#each order as { Productname , Price }}
+      {#each order as { Productname , Price , Count }}
 		  <tr>
 			<td>{Productname}</td> 
+      <td>{Count}</td>
       <td>{Price}</td> 
 		   </tr>
 	    {/each}
 
     <tr>
     <td class="w3-green">Cart Total</td>
+    <td class="w3-green"></td>
     <td class="w3-green">{$orderTotal}</td> 
   </tr>
   
