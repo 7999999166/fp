@@ -34,7 +34,7 @@
     <div class="row mb-5">
         <div class="col-md-8 col-xl-6 text-center mx-auto">
             <h2>Product Catagories</h2>
-            <p>Curae hendrerit donec commodo hendrerit egestas tempus, turpis facilisis nostra nunc. Vestibulum dui eget ultrices.</p>
+            <p>We Offer Best Product at Best Price</p>
         </div>
     </div>
     <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
@@ -43,7 +43,7 @@
                 <div class="py-4">
                     <a href="/dustbins"><h4>Dustbins</h4></a>
                     <h6 class="huy">Price -2400 </h6>
-                    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    <p>Dustbins are generally used to dispose of unwanted materials like waste paper, food scraps, and other forms of garbage. They come in a variety of sizes, materials, and styles, and are used in both indoor and outdoor settings.</p>
                     <button class="btn btn-primary" data-amount=2400 data-name="dustbin"  on:click={addToOrder}>add to cart</button>
                 </div>
             </div>
@@ -53,7 +53,8 @@
                 <div class="py-4">
                    <a href="/containers"><h4>Containers</h4></a>
                    <h6 class="huy">Price -2700 </h6> 
-                    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    <p>
+Containers are generally used to store and transport goods. They come in a variety of sizes, shapes, and materials, and are used in a variety of industries.</p>
                     <button class="btn btn-primary" data-amount=2700 data-name="Container" on:click={addToOrder}> add to cart</button>
                 </div>
             </div>
@@ -63,7 +64,7 @@
                 <div class="py-4">
                     <a href="/planters"><h4>Planters</h4></a>
                     <h6 class="huy">Price -2600 </h6>
-                    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    <p>Planters are containers used to grow plants. They are made from a variety of materials, including plastic, metal, wood, and ceramic. Planters come in a variety of sizes and shapes to accommodate different types of plants. They can be placed indoors or outdoors.</p>
                     <button class="btn btn-primary" data-amount=2600 data-name="Planter" on:click={addToOrder}>add to cart</button>
                 </div>
             </div>
