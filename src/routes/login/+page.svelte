@@ -20,15 +20,13 @@
    })
   .then(response => {
 
-    console.log('User profile', response.data.user);
-    console.log('User token', response.data.jwt);
     jtoken = response.data.jwt ;
-    user = response.data.user ;
-    userid = response.data.id
+    user = response.data.user.username ;
+    userid = response.data.user.id ;
     
   })
 
-  .then( async function userInfo(){ await db.order.add({jwt: jtoken,userId: userid ,userName:jj })
+  .then( async function userInfo(){ await db2.userInfo.add({jwt: jtoken,userId: userid ,userName:jj })
   
   
   })
@@ -64,10 +62,10 @@
                             <div class="mb-3"><input bind:value={password} class="form-control" type="password" placeholder="Password" /></div>
                             <div class="mb-3"><button class="btn btn-primary d-block w-100"  on:click={daru}>Sign In</button></div>
                             <a href="/signUp">Need to Register ?</a>
-                            {#if user=='undefined'}
-	                         <h1></h1>
+                            {#if user !== undefined }
+	                         <h1>Hello {user}</h1>
                              {:else}
-	                        <h1>Hello {user}</h1>
+	                        <h1></h1>
                               {/if}
                             
                         </div>
