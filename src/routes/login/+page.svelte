@@ -1,6 +1,6 @@
 <script>
 
-    import {db2} from '../../db2.js';
+    import {db} from '../../db.js';
 
     var userName ;
     var password ;
@@ -26,7 +26,7 @@
     
   })
 
-  .then( async function userInfo(){ await db2.userInfo.add({jwt: jtoken,userId: userid ,userName:user })
+  .then( async function userInfo(){ await db.userInfo.add({jwt: jtoken,userId: userid ,userName:user })
   
   
   })
