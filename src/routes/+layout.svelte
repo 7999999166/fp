@@ -8,7 +8,9 @@
    $: haha =  $userNname ;
    $: console.log($userNname);
 
-    var order = []
+    var order = [] ;
+
+    function kit(){window.location.replace("https://akhilsteel.in/login",);}
 
     async function chyu(){ order = await db.order.toArray() ;}
     	
@@ -84,9 +86,16 @@
 </table>
     
    <div class="muio w3-center">
-    <button class="btn btn-danger w3-hover-indigo">Checkout</button>
 
-     {#if haha !== 'Login'}
+
+               {#if haha !== 'Login'}
+                <button class="btn btn-danger w3-hover-indigo">Checkout</button>
+                {:else}
+	             <button class="btn btn-danger w3-hover-indigo" on:click={kit}>Checkout</button>
+               {/if}
+    
+
+                {#if haha !== 'Login'}
 	             <h6>&nbsp;</h6>
                 {:else}
 	             <h6 class="uiy">Kindly Login to Checkout</h6>
