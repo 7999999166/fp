@@ -3,6 +3,10 @@
     var password ;
     var jtoken ;
     var user ;
+    var userid ;
+
+
+   
 
 
   async function daru(){
@@ -20,12 +24,20 @@
     console.log('User token', response.data.jwt);
     jtoken = response.data.jwt ;
     user = response.data.user ;
+    userid = response.data.id
     
   })
-}
+
+  .then( async function userInfo(){ await db.order.add({jwt: jtoken,userId: userid ,userName:jj })
+  
+  
+  })
 
 
+  }
 
+
+  
 
 
   
@@ -52,6 +64,12 @@
                             <div class="mb-3"><input bind:value={password} class="form-control" type="password" placeholder="Password" /></div>
                             <div class="mb-3"><button class="btn btn-primary d-block w-100"  on:click={daru}>Sign In</button></div>
                             <a href="/signUp">Need to Register ?</a>
+                            {#if user=='undefined'}
+	                         <h1></h1>
+                             {:else}
+	                        <h1>Hello {user}</h1>
+                              {/if}
+                            
                         </div>
                     </div>
                 </div>
