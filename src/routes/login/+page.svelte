@@ -1,12 +1,11 @@
 <script>
+
+    import {db2} from '../../db2.js';
     var userName ;
     var password ;
     var jtoken ;
     var user ;
     var userid ;
-
-
-   
 
 
   async function daru(){
