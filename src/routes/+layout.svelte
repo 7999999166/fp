@@ -8,6 +8,8 @@
    $: haha =  $userNname ;
    $: console.log($userNname);
 
+    async function nahi(){var aaa = new Promise (async function(resolve){var zash = await axios.get('https://akhilsteel.in/.netlify/functions/hello-world') ;  resolve(zash); return aaa; });}
+
     var order = [] ;
 
     function kit(){window.location.replace("https://akhilsteel.in/login",);}
@@ -89,7 +91,7 @@
 
 
                {#if haha !== 'Login'}
-                <button class="btn btn-danger w3-hover-indigo">Checkout</button>
+                <button class="btn btn-danger w3-hover-indigo" on:click={nahi}>Checkout</button>
                 {:else}
 	             <button class="btn btn-danger w3-hover-indigo" on:click={kit}>Checkout</button>
                {/if}
