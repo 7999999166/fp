@@ -3,6 +3,10 @@
     import {db} from '../db.js';
     import { orderTotal } from "../store.js";
     import {cartQtyTotal} from "../store2.js";
+    import {userNname} from '../store3.js';
+
+   $: haha =  $userNname ;
+   $: console.log($userNname);
 
     var order = []
 
@@ -28,9 +32,25 @@
                 <li class="nav-item"><a class="nav-link" href="/aboutUs">About Us</a></li>
                 <li class="nav-item"><a class="nav-link" href="/contactUs">Contact Us</a></li>
             </ul>
-            <div class="d-md-none my-2"><a class="btn btn-light me-2" role="button" href="/login">Login</a><a  class="btn btn-primary" role="button" on:click={chyu}  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Cart <span class="w3-badge w3-red">{$cartQtyTotal}</span></a></div>
+            <div class="d-md-none my-2">
+              {#if haha !== 'Login'}
+	             <a class="btn btn-light me-2" role="button" href="/login">Hello ,{haha}</a>
+                {:else}
+	              <a class="btn btn-light me-2" role="button" href="/login">{haha}</a>
+               {/if}
+             
+              
+              <a  class="btn btn-primary" role="button" on:click={chyu}  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Cart <span class="w3-badge w3-red">{$cartQtyTotal}</span></a>
+            </div>
         </div>
-        <div class="d-none d-md-block"><a class="btn btn-light me-2" role="button" href="/login">Login</a><a  class="btn btn-primary" role="button" on:click={chyu}   data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Cart <span class="w3-badge w3-red">{$cartQtyTotal}</span></a></div>
+        <div class="d-none d-md-block">
+              {#if haha !== 'Login'}
+	             <a class="btn btn-light me-2" role="button" href="/login">Hello ,{haha}</a>
+                {:else}
+	              <a class="btn btn-light me-2" role="button" href="/login">{haha}</a>
+               {/if}
+          <a  class="btn btn-primary" role="button" on:click={chyu}   data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Cart <span class="w3-badge w3-red">{$cartQtyTotal}</span></a>
+        </div>
     </div>
 </nav>
 <div class="mimi"></div>
@@ -65,6 +85,14 @@
     
    <div class="muio w3-center">
     <button class="btn btn-danger w3-hover-indigo">Checkout</button>
+
+     {#if haha !== 'Login'}
+	             <h6>&nbsp;</h6>
+                {:else}
+	             <h6 class="uiy">Kindly Login to Checkout</h6>
+               {/if}
+    
+    
    </div>
     
   </div>
@@ -121,6 +149,9 @@
 }
 .armaya{
   font-weight: bolder;
+}
+.uiy{
+  color: red;
 }
 
 </style>

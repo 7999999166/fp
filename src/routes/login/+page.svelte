@@ -1,12 +1,15 @@
 <script>
 
     import {db} from '../../db.js';
+    import {userNname} from '../../store3.js';
+
 
     var userName ;
     var password ;
     var jtoken ;
     var user ;
     var userid ;
+
 
 
   async function daru(){
@@ -30,6 +33,8 @@
   
   
   })
+
+  .then(function(){ $userNname = user ; console.log($userNname)})
 
 
   }
@@ -61,13 +66,7 @@
                             <div class="mb-3"><input bind:value={userName} class="form-control" type="email"  placeholder="User Name or Email id" /></div>
                             <div class="mb-3"><input bind:value={password} class="form-control" type="password" placeholder="Password" /></div>
                             <div class="mb-3"><button class="btn btn-primary d-block w-100"  on:click={daru}>Sign In</button></div>
-                            <a href="/signUp">Need to Register ?</a>
-                            {#if user !== undefined }
-	                         <h1>Hello {user}</h1>
-                             {:else}
-	                        <h1></h1>
-                              {/if}
-                            
+                            <a href="/signUp">Need to Register ?</a>   
                         </div>
                     </div>
                 </div>
