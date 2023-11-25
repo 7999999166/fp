@@ -14,7 +14,7 @@
               email: bb,
               password: ee,
               username: aa,
-              phoneNo:cc,
+              PhoneNo:cc,
               DeliveryAddress:dd
 
            }
