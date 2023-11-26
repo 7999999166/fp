@@ -5,6 +5,7 @@
     var dd ;
     var ee ;
 
+console.log(cc) ;
 
     async function maru(){
    axios({
@@ -14,7 +15,7 @@
               email: bb,
               password: ee,
               username: aa,
-              phoneno:cc,
+              phoneno:cc.toString(),
               deliveryaddress:dd
 
            }
