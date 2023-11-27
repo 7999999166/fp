@@ -118,9 +118,9 @@
 
 
                {#if haha !== 'Login'}
-                <button class="btn btn-danger w3-hover-indigo" on:click={nahi}>Checkout</button>
+                <button class="btn btn-danger w3-hover-indigo" data-bs-toggle="modal" data-bs-target="#exampleModal786" on:click={nahi} >Checkout</button>
                 {:else}
-	             <button data-bs-toggle="modal" data-bs-target="#exampleModal786" class="btn btn-danger w3-hover-indigo" on:click={kit}>Checkout</button>
+	             <button data-bs-toggle="modal" data-bs-target="#exampleModal786" class="btn btn-danger w3-hover-indigo" on:click={kit} >Checkout</button>
                {/if}
     
 
