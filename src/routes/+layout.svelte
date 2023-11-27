@@ -61,11 +61,11 @@
         </div>
     </div>
 </nav>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal786" tabindex="-1" aria-labelledby="exampleModalLabel786" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Complete Order</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel786">Complete Order</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -120,7 +120,7 @@
                {#if haha !== 'Login'}
                 <button class="btn btn-danger w3-hover-indigo" on:click={nahi}>Checkout</button>
                 {:else}
-	             <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-danger w3-hover-indigo" on:click={kit}>Checkout</button>
+	             <button data-bs-toggle="modal" data-bs-target="#exampleModal786" class="btn btn-danger w3-hover-indigo" on:click={kit}>Checkout</button>
                {/if}
     
 
