@@ -72,7 +72,7 @@
         <h1>Hello {haha}</h1>
         <h5> Kindly Fill up the Delivery Address to Complete the Transaction </h5>
         <div class="input-group">
-  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Delivery Address">
+  <input type="text" class="form-control" placeholder="Delivery Address" aria-label="Delivery Address">
   <button class="btn btn-outline-secondary" type="button">Confirm</button>
   
 </div>
