@@ -25,8 +25,7 @@
         <div class="row gx-2 gy-2 row-cols-1 row-cols-md-2 row-cols-xl-3" data-bss-baguettebox>
             <div class="col"><img class="img-fluid" src="Dabba.jpg" /></div>
             <div class="col"><img class="img-fluid" src="PedalBin.jpg" /></div>
-            <div class="col"><img class="img-fluid" src="planter.jpg" /></div>
-            
+            <div class="col"><img class="img-fluid" src="planter.jpg" /></div>  
         </div>
     </div>
 </section>

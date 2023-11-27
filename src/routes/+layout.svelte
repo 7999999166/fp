@@ -61,6 +61,29 @@
         </div>
     </div>
 </nav>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Complete Order</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h1>Hello {haha}</h1>
+        <h5> Kindly Fill up the Delivery Address to Complete the Transaction </h5>
+        <div class="input-group">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username with two button addons">
+  <button class="btn btn-outline-secondary" type="button">Confirm</button>
+  
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Make Payment</button>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="mimi"></div>
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -97,7 +120,7 @@
                {#if haha !== 'Login'}
                 <button class="btn btn-danger w3-hover-indigo" on:click={nahi}>Checkout</button>
                 {:else}
-	             <button class="btn btn-danger w3-hover-indigo" on:click={kit}>Checkout</button>
+	             <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-danger w3-hover-indigo" on:click={kit}>Checkout</button>
                {/if}
     
 
