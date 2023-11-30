@@ -44,7 +44,7 @@
                     <a style="pointer-events: none; cursor: default;" href="/dustbins"><h4>Dustbins</h4></a>
                     <h6 class="huy">Price -870 </h6>
                     <p>Dustbins are generally used to dispose of unwanted materials like waste paper, food scraps, and other forms of garbage. They come in a variety of sizes, materials, and styles, and are used in both indoor and outdoor settings.</p>
-                    <button class="btn btn-primary" data-amount=2400 data-name="dustbin"  on:click={addToOrder}>add to cart</button>
+                    <button class="btn btn-primary" data-amount=870 data-name="dustbin"  on:click={addToOrder}>add to cart</button>
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
                    <h6 class="huy">Price - 976</h6> 
                     <p>
 Containers are generally used to store and transport goods. They come in a variety of sizes, shapes, and materials, and are used in a variety of industries.</p>
-                    <button class="btn btn-primary" data-amount=2700 data-name="Container" on:click={addToOrder}> add to cart</button>
+                    <button class="btn btn-primary" data-amount=976 data-name="Container" on:click={addToOrder}> add to cart</button>
                 </div>
             </div>
         </div>
@@ -65,7 +65,7 @@ Containers are generally used to store and transport goods. They come in a varie
                     <a style="pointer-events: none; cursor: default;" href="/planters"><h4>Planters</h4></a>
                     <h6 class="huy">Price - 1200 </h6>
                     <p>Planters are containers used to grow plants. They are made from a variety of materials, including plastic, metal, wood, and ceramic. Planters come in a variety of sizes and shapes to accommodate different types of plants. They can be placed indoors or outdoors.</p>
-                    <button class="btn btn-primary" data-amount=2600 data-name="Planter" on:click={addToOrder}>add to cart</button>
+                    <button class="btn btn-primary" data-amount=1200 data-name="Planter" on:click={addToOrder}>add to cart</button>
                 </div>
             </div>
         </div>

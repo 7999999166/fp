@@ -1,9 +1,19 @@
 <script>
-
     import {db} from '../db.js';
     import { orderTotal } from "../store.js";
     import {cartQtyTotal} from "../store2.js";
     import {userNname} from '../store3.js';
+
+
+    async function addToTotal(){const orders = await db.order.toArray() ; console.log(orders) ;
+     $orderTotal = orders.reduce(function(rtotal,item){return rtotal + item.Price },0); console.log($orderTotal) ;}
+
+     async function addToCartQty(){const orders = await db.order.toArray() ; 
+     $cartQtyTotal = orders.reduce(function(rtotal,item){return rtotal + item.Count },0);}
+
+    var padak ;
+    $: padak ;
+    async function jabnam(e){ padak  = eval(e.target.getAttribute("data-acto")) ; console.log(padak) ; await db.order.delete(padak); chyu(); addToTotal(); addToCartQty(); }
 
    $: haha =  $userNname ;
    $: console.log($userNname);
@@ -97,12 +107,14 @@
     <th>Name</th>
     <th>QTY</th>
     <th>Price</th> 
+    <th></th>
   </tr>
-      {#each order as { Productname , Price , Count }}
+      {#each order as { Productname , Price , Count , id }}
 		  <tr>
 			<td>{Productname}</td> 
       <td>{Count}</td>
       <td>{Price}</td> 
+      <td><img src="/trash.svg" alt="" data-acto={id} on:click={jabnam}></td>
 		   </tr>
 	    {/each}
 
@@ -110,6 +122,7 @@
     <td class="w3-green">Cart Total</td>
     <td class="w3-green"></td>
     <td class="w3-green">{$orderTotal}</td> 
+    <td></td>
   </tr>
   
 </table>
