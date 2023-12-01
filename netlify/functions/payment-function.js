@@ -41,11 +41,11 @@ const options = {
   data: encodedParams,
 };
 
-
+const dukhta = await axios.request(options);
 
  return {
            statusCode : 200 ,
-           body : JSON.stringify( await axios.request(options)) 
+           body : JSON.stringify(dukhta) 
          };
 
 
