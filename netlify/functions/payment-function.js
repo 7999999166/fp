@@ -20,7 +20,7 @@ exports.handler = async function (event){
 
 const encodedParams = new URLSearchParams();
 encodedParams.set('key', key);
-encodedParams.set('txnid', taxid);
+encodedParams.set('txnid', txnid);
 encodedParams.set('amount', amount);
 encodedParams.set('productinfo', productinfo);
 encodedParams.set('firstname', firstname);
@@ -55,3 +55,5 @@ try {
 
 
 }
+
+
