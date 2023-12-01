@@ -50,7 +50,7 @@ try {
 
  return {
            statusCode : 200 ,
-           body : JSON.stringify(hash) 
+           body : JSON.stringify(data) 
          };
 
 
