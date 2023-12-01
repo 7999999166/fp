@@ -14,26 +14,7 @@
                               encodedParams.set('email', 'mahesh@gmail.com');
                               encodedParams.set('surl', 'https://akhilsteel.in');
                               encodedParams.set('furl', 'https://starlightsteel.in');
-                              encodedParams.set('hash', mash);
-                              encodedParams.set('udf1', '');
-                              encodedParams.set('udf2', '');
-                              encodedParams.set('udf3', '');
-                              encodedParams.set('udf4', '');
-                              encodedParams.set('udf5', '');
-                              encodedParams.set('udf6', '');
-                              encodedParams.set('udf7', '');
-                              encodedParams.set('address1', '');
-                              encodedParams.set('address2', '');
-                              encodedParams.set('city', '');
-                              encodedParams.set('state', '');
-                              encodedParams.set('country', '');
-                              encodedParams.set('zipcode', '');
-                              encodedParams.set('show_payment_mode', '');
-                              encodedParams.set('split_payments', '');
-                              encodedParams.set('request_flow', '');
-                              encodedParams.set('sub_merchant_id', '');
-                              encodedParams.set('payment category', '');
-                              encodedParams.set('account_no', '');
+                              encodedParams.set('hash', mash);                             
 
 const options = {
   method: 'POST',
