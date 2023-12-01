@@ -2,6 +2,7 @@
     async function aaa(){var xxx = new Promise (async function(resolve){var zash = await axios.get('https://akhilsteel.in/.netlify/functions/hello-world') ;  resolve(zash); }); return xxx ;}
     async function myMtain(){var hash = await aaa() ;
                              var mash = hash.data ;
+                             console.log(mash);
                              
                              const encodedParams = new URLSearchParams();
                               encodedParams.set('key', '2PBP7IABZ2');
@@ -38,6 +39,7 @@ const options = {
   method: 'POST',
   url: 'https://testpay.easebuzz.in/payment/initiateLink',
   headers: {
+    'Access-Control-Allow-Origin': '*'          ,
     'Content-Type': 'application/x-www-form-urlencoded',
     Accept: 'application/json'
   },
