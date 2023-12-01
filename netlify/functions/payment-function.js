@@ -16,7 +16,7 @@ var hash = crypto.createHash('sha512').update(myValue).digest('hex');
 
 
 
-exports.handler = async function (event){
+exports.handler = async function (event,token){
 
 const encodedParams = new URLSearchParams();
 encodedParams.set('key', key);
@@ -41,11 +41,11 @@ const options = {
   data: encodedParams,
 };
 
-const dukhta = await axios.request(options);
+ token = await axios.request(options);
 
  return {
            statusCode : 200 ,
-           body : JSON.stringify(dukhta) 
+           body : JSON.stringify(token) 
          };
 
 
