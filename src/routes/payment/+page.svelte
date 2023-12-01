@@ -12,8 +12,8 @@
                               encodedParams.set('firstname', 'sandeep');
                               encodedParams.set('phone', '9090909090');
                               encodedParams.set('email', 'mahesh@gmail.com');
-                              encodedParams.set('surl', 'https://akhilsteel.in/');
-                              encodedParams.set('furl', 'https://starlightsteel.in/');
+                              encodedParams.set('surl', 'https://akhilsteel.in');
+                              encodedParams.set('furl', 'https://starlightsteel.in');
                               encodedParams.set('hash', mash);
                               encodedParams.set('udf1', '');
                               encodedParams.set('udf2', '');
