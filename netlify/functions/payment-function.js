@@ -41,16 +41,11 @@ const options = {
   data: encodedParams,
 };
 
-try {
-  const chamata = await axios.request(options);
-  console.log(chamata);
-} catch (error) {
-  console.error(error);
-}
+
 
  return {
            statusCode : 200 ,
-           body : JSON.stringify(data) 
+           body : JSON.stringify( await axios.request(options)) 
          };
 
 
