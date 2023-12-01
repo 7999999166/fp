@@ -42,8 +42,8 @@ const options = {
 };
 
 try {
-  const { data } = await axios.request(options);
-  console.log(data);
+  const chamata = await axios.request(options);
+  console.log(chamata);
 } catch (error) {
   console.error(error);
 }
