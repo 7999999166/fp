@@ -3,6 +3,10 @@
     import { orderTotal } from "../store.js";
     import {cartQtyTotal} from "../store2.js";
     import {userNname} from '../store3.js';
+    
+
+
+    
 
 
     async function addToTotal(){const orders = await db.order.toArray() ; console.log(orders) ;
@@ -114,7 +118,7 @@
 			<td>{Productname}</td> 
       <td>{Count}</td>
       <td>{Price}</td> 
-      <td><img src="/trash.svg" alt="" data-acto={id} on:click={jabnam}></td>
+      <td><img src="/trash.svg" alt="product" data-acto={id} on:click={jabnam}></td>
 		   </tr>
 	    {/each}
 

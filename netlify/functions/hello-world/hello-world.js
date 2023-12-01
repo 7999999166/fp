@@ -5,7 +5,7 @@
      exports.handler = async function (event){
 
 
-     var key = '2PBP7IABZ2' ;
+     var key = process.env.KEY ;
      var txnid = 'braitsch00237';
      var amount = '2400' ;
      var productinfo = 'appleWatch' ;
