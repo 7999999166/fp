@@ -1,6 +1,7 @@
-var axios = require('axios');
+var axios = require('axios').default;
 var sha512 = require('js-sha512');
-var crypto = require('crypto');
+const { URLSearchParams } = require('url');
+// var crypto = require('crypto');
 
 
 
@@ -13,7 +14,7 @@ var phone = '9090909090';
 var email = 'mahesh@gmail.com' ;
 var salt = process.env.SALT ;
 var myValue = key+'|'+txnid+'|'+amount+'|'+productinfo+'|'+firstname+'|'+phone+'|'+email+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+salt ;
-var hash = crypto.createHash('sha512').update(myValue).digest('hex');
+// var hash = crypto.createHash('sha512').update(myValue).digest('hex');
 var zash = sha512.sha512(myValue);
 
 
@@ -38,7 +39,7 @@ const options = {
   url: 'https://pay.easebuzz.in',
   headers: {
     'Content-Type': 'application/x-www-form-urlencoded',
-    Accept: 'application/json'
+     Accept: 'application/json'
   },
   data: encodedParams,
 };
@@ -49,7 +50,6 @@ const options = {
            statusCode : 200 ,
            headers: {
            'Access-Control-Allow-Origin': '*',
-           'Access-Control-Allow-Credentials': true
            },
            body : JSON.stringify(res) 
          };
