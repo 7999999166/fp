@@ -67,7 +67,7 @@ var mydata = JSON.stringify(myData);
 
  return {
            statusCode : 200 ,
-           body : mydata
+           body : myToken
          };
 
 
