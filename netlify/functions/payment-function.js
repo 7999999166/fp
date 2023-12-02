@@ -43,7 +43,7 @@ const options = {
   data: encodedParams,
 };
 
- res = await axios.request(options);
+//  res = await axios.request(options);
 
  return {
            statusCode : 200 ,
