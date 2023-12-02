@@ -19,13 +19,13 @@ exports.handler = async function (event,res){
 
 
 const encodedParams = new URLSearchParams();
-encodedParams.set('key', '1VS97REYKV');
-encodedParams.set('txnid', 'braitsch00237');
-encodedParams.set('amount', '2400');
-encodedParams.set('productinfo', 'appleWatch' );
-encodedParams.set('firstname', 'sandeep');
-encodedParams.set('phone', '9090909090');
-encodedParams.set('email','mahesh@gmail.com');
+encodedParams.set('key', key);
+encodedParams.set('txnid', txnid);
+encodedParams.set('amount', amount);
+encodedParams.set('productinfo', productinfo );
+encodedParams.set('firstname', firstname);
+encodedParams.set('phone', phone);
+encodedParams.set('email',email);
 encodedParams.set('surl', 'https://akhilsteel.in');
 encodedParams.set('furl', 'https://akhilsteel.in/payment');
 encodedParams.set('hash', hash );
