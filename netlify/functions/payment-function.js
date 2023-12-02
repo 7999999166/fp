@@ -41,17 +41,6 @@ encodedParams.set('email',email);
 encodedParams.set('surl', 'https://akhilsteel.in');
 encodedParams.set('furl', 'https://akhilsteel.in/payment');
 encodedParams.set('hash', hash );
-encodedParams.set('udf1', '');
-encodedParams.set('udf2', '');
-encodedParams.set('udf3', '');
-encodedParams.set('udf4', '');
-encodedParams.set('udf5', '');
-encodedParams.set('udf6', '');
-encodedParams.set('udf7', '');
-encodedParams.set('udf8', '');
-encodedParams.set('udf9', '');
-encodedParams.set('udf10','');
-
 
 
 const options = {
@@ -78,7 +67,7 @@ var mydata = JSON.stringify(myData);
 
  return {
            statusCode : 200 ,
-           body : myToken
+           body : mydata
          };
 
 
