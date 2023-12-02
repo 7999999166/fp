@@ -3,8 +3,6 @@ var sha512 = require('js-sha512');
 const { URLSearchParams } = require('url');
 
 
-
-
 var key = process.env.KEY ;
 var txnid = 'braitsch00237';
 var amount = '2400' ;
@@ -16,9 +14,6 @@ var salt = process.env.SALT ;
 var myValue = key+'|'+txnid+'|'+amount+'|'+productinfo+'|'+firstname+'|'+phone+'|'+email+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+salt ;
 var hash = sha512.sha512(myValue);
 
-
-
-exports.handler = async function (event,res){
 
 const encodedParams = new URLSearchParams();
 encodedParams.set('key', key);
@@ -33,9 +28,12 @@ encodedParams.set('furl', 'https://akhilsteel.in/payment');
 encodedParams.set('hash', hash);
 
 
+
+exports.handler = async function (event,res){
+
 const options = {
   method: 'POST',
-  url: 'https://pay.easebuzz.in',
+  url: 'https://stoplight.io/mocks/easebuzz/payment-gateway/88397287/payment/initiateLink',
   headers: {
     'Content-Type': 'application/x-www-form-urlencoded',
      Accept: 'application/json'
