@@ -42,7 +42,7 @@ const options = {
   data: encodedParams,
 };
 
- res = await axios.request(options);
+ res = JSON.stringify( await axios.request(options)) ;
 
  return {
            statusCode : 200 ,
