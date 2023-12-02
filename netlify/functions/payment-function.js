@@ -45,27 +45,10 @@ const options = {
 
 res = await axios.request(options) ;
 
-function stringify(res) {
-  let cache = [];
-  let str = JSON.stringify(res, function(key, value) {
-    if (typeof value === "object" && value !== null) {
-      if (cache.indexOf(value) !== -1) {
-        // Circular reference found, discard key
-        return;
-      }
-      // Store value in our collection
-      cache.push(value);
-    }
-    return value;
-  });
-  cache = null; // reset the cache
-  return str;
-}
-
 
  return {
            statusCode : 200 ,
-           body :  res
+           body :  res.data
          };
 
 
