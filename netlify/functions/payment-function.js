@@ -8,7 +8,6 @@ var txnid = 'braitsch00237';
 var amount = 2400.0 ;
 var productinfo = 'appleWatch' ;
 var firstname = 'sandeep' ;
-var phone = '9090909090';
 var email = 'mahesh@gmail.com' ;
 var salt = process.env.SALT ;
 var udf1 ='' ;
@@ -23,7 +22,7 @@ var udf9 ='' ;
 var udf10 ='' ;
 
 
-var myValue = key+'|'+txnid+'|'+amount+'|'+productinfo+'|'+firstname+'|'+phone+'|'+email+'|'+udf1+'|'+udf2+'|'+udf3+'|'+udf4+'|'+udf5+'|'+udf6+'|'+udf7+'|'+udf8+'|'+udf9+'|'+udf10+'|'+salt ;
+var myValue = key+'|'+txnid+'|'+amount+'|'+productinfo+'|'+firstname+'|'+email+'|'+udf1+'|'+udf2+'|'+udf3+'|'+udf4+'|'+udf5+'|'+udf6+'|'+udf7+'|'+udf8+'|'+udf9+'|'+udf10+'|'+salt ;
 var hash = crypto.createHash('sha512').update(myValue).digest('hex');
 
 
@@ -36,7 +35,6 @@ encodedParams.set('txnid', txnid);
 encodedParams.set('amount', amount);
 encodedParams.set('productinfo', productinfo );
 encodedParams.set('firstname', firstname);
-encodedParams.set('phone', phone);
 encodedParams.set('email',email);
 encodedParams.set('surl', 'https://akhilsteel.in');
 encodedParams.set('furl', 'https://akhilsteel.in/payment');
