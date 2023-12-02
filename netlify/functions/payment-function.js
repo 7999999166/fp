@@ -1,5 +1,4 @@
 var axios = require('axios').default;
-var sha512 = require('js-sha512');
 const { URLSearchParams } = require('url');
 var crypto = require('crypto') ;
 
@@ -13,8 +12,7 @@ var phone = '9090909090';
 var email = 'mahesh@gmail.com' ;
 var salt = process.env.SALT ;
 var myValue = key+'|'+txnid+'|'+amount+'|'+productinfo+'|'+firstname+'|'+phone+'|'+email+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+salt ;
-var hash = sha512.sha512(myValue);
-var zash = crypto.createHash('sha512').update(myValue).digest('hex');
+var hash = crypto.createHash('sha512').update(myValue).digest('hex');
 
 
 exports.handler = async function (event,res){
@@ -30,7 +28,7 @@ encodedParams.set('phone', phone);
 encodedParams.set('email',email);
 encodedParams.set('surl', 'https://akhilsteel.in');
 encodedParams.set('furl', 'https://akhilsteel.in/payment');
-encodedParams.set('hash', hash );
+encodedParams.set('hash', 'ea8e3374b6c1b07bb9521c08393eaffd1655bc983b49a44f007d52bdf3e1c0800e86b289c0b7c806c78b8802dd1465777ca44e116edb42bf690a9ec4e98c6e8c' );
 
 
 
@@ -50,7 +48,6 @@ var myToken = JSON.stringify(res.data) ;
 
 var myData = {
   val1:hash,
-  val2:zash,
   val3:myValue
 }
 
