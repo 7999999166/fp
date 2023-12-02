@@ -5,7 +5,7 @@ const { URLSearchParams } = require('url');
 
 var key = process.env.KEY ;
 var txnid = 'braitsch00237';
-var amount = '2400' ;
+var amount = '2400.0' ;
 var productinfo = 'appleWatch' ;
 var firstname = 'sandeep' ;
 var phone = '9090909090';
