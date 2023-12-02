@@ -11,7 +11,19 @@ var firstname = 'sandeep' ;
 var phone = '9090909090';
 var email = 'mahesh@gmail.com' ;
 var salt = process.env.SALT ;
-var myValue = key+'|'+txnid+'|'+amount+'|'+productinfo+'|'+firstname+'|'+phone+'|'+email+'|'+salt ;
+var udf1 ='' ;
+var udf2 ='' ;
+var udf3 ='' ;
+var udf4 ='' ;
+var udf5 ='' ;
+var udf6 ='' ;
+var udf7 ='' ;
+var udf8 ='' ;
+var udf9 ='' ;
+var udf10 ='' ;
+
+
+var myValue = key+'|'+txnid+'|'+amount+'|'+productinfo+'|'+firstname+'|'+phone+'|'+email+'|'+udf1+'|'+udf2+'|'+udf3+'|'+udf4+'|'+udf5+'|'+udf6+'|'+udf7+'|'+udf8+'|'+udf9+'|'+udf10+'|'+salt ;
 var hash = crypto.createHash('sha512').update(myValue).digest('hex');
 
 
@@ -29,6 +41,13 @@ encodedParams.set('email',email);
 encodedParams.set('surl', 'https://akhilsteel.in');
 encodedParams.set('furl', 'https://akhilsteel.in/payment');
 encodedParams.set('hash', hash );
+encodedParams.set('udf1', '');
+encodedParams.set('udf2', '');
+encodedParams.set('udf3', '');
+encodedParams.set('udf4', '');
+encodedParams.set('udf5', '');
+encodedParams.set('udf6', '');
+encodedParams.set('udf7', '');
 
 
 
