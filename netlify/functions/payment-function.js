@@ -58,7 +58,7 @@ res = await axios.request(options) ;
 var myToken = JSON.stringify(res.data) ;
 
 var myData = {
-  val1:typeof(hashString),
+  val1:hashString,
   val3:myValue
 }
 
@@ -67,7 +67,7 @@ var mydata = JSON.stringify(myData);
 
  return {
            statusCode : 200 ,
-           body : mydata
+           body : myToken
          };
 
 
