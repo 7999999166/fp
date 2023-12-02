@@ -24,7 +24,7 @@ var udf10 ='' ;
 
 
 var myValue = key+'|'+txnid+'|'+amount+'|'+productinfo+'|'+firstname+'|'+phone+'|'+email+'|'+udf1+'|'+udf2+'|'+udf3+'|'+udf4+'|'+udf5+'|'+udf6+'|'+udf7+'|'+udf8+'|'+udf9+'|'+udf10+'|'+salt ;
-var hash = crypto.createHash('sha512').update(myValue).digest('hex');
+var hashString = crypto.createHash('sha512').update(myValue).digest('hex');
 
 
 exports.handler = async function (event,res){
@@ -40,7 +40,7 @@ encodedParams.set('phone', phone);
 encodedParams.set('email',email);
 encodedParams.set('surl', 'https://akhilsteel.in');
 encodedParams.set('furl', 'https://akhilsteel.in/payment');
-encodedParams.set('hash', hash );
+encodedParams.set('hash', hashString );
 
 
 const options = {
@@ -67,7 +67,7 @@ var mydata = JSON.stringify(myData);
 
  return {
            statusCode : 200 ,
-           body : mydata
+           body : myToken
          };
 
 
