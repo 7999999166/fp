@@ -34,7 +34,7 @@ encodedParams.set('hash', hash);
 
 const options = {
   method: 'POST',
-  url: 'https://stoplight.io/mocks/easebuzz/payment-gateway/88397287/payment/initiateLink',
+  url: 'https://testpay.easebuzz.in',
   headers: {
     'Content-Type': 'application/x-www-form-urlencoded',
      Accept: 'application/json'
