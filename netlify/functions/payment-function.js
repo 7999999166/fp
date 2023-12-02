@@ -1,7 +1,7 @@
 var axios = require('axios').default;
 var sha512 = require('js-sha512');
 const { URLSearchParams } = require('url');
-// var crypto = require('crypto');
+
 
 
 
@@ -14,8 +14,7 @@ var phone = '9090909090';
 var email = 'mahesh@gmail.com' ;
 var salt = process.env.SALT ;
 var myValue = key+'|'+txnid+'|'+amount+'|'+productinfo+'|'+firstname+'|'+phone+'|'+email+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+salt ;
-// var hash = crypto.createHash('sha512').update(myValue).digest('hex');
-var zash = sha512.sha512(myValue);
+var hash = sha512.sha512(myValue);
 
 
 
@@ -31,7 +30,7 @@ encodedParams.set('phone', phone);
 encodedParams.set('email', email);
 encodedParams.set('surl', 'https://akhilsteel.in');
 encodedParams.set('furl', 'https://akhilsteel.in/payment');
-encodedParams.set('hash', zash);
+encodedParams.set('hash', hash);
 
 
 const options = {
@@ -48,9 +47,6 @@ const options = {
 
  return {
            statusCode : 200 ,
-           headers: {
-           'Access-Control-Allow-Origin': '*',
-           },
            body : JSON.stringify(res) 
          };
 
