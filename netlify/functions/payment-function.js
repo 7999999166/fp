@@ -44,11 +44,12 @@ const options = {
 };
 
 res = await axios.request(options) ;
+var kaju = JSON.stringify(res.data) ;
 
 
  return {
            statusCode : 200 ,
-           body :  res.data
+           body :  kaju
          };
 
 
