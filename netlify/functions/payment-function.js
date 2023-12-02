@@ -12,7 +12,7 @@ var phone = '9090909090';
 var email = 'mahesh@gmail.com' ;
 var salt = process.env.SALT ;
 var myValue = key+'|'+txnid+'|'+amount+'|'+productinfo+'|'+firstname+'|'+phone+'|'+email+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+salt ;
-var hash = crypto.createHash('sha512').update(myValue).string('hex');
+var hash = crypto.createHash('sha512').update(myValue).digest('hex');
 
 
 exports.handler = async function (event,res){
