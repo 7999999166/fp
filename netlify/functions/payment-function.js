@@ -1,6 +1,7 @@
 var axios = require('axios').default;
 var sha512 = require('js-sha512');
 const { URLSearchParams } = require('url');
+var crypto = require('crypto') ;
 
 
 var key = process.env.KEY ;
@@ -13,6 +14,7 @@ var email = 'mahesh@gmail.com' ;
 var salt = process.env.SALT ;
 var myValue = key+'|'+txnid+'|'+amount+'|'+productinfo+'|'+firstname+'|'+phone+'|'+email+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+salt ;
 var hash = sha512.sha512(myValue);
+var zash = crypto.createHash('sha512').update(myValue).digest('hex');
 
 
 exports.handler = async function (event,res){
@@ -46,10 +48,18 @@ const options = {
 res = await axios.request(options) ;
 var myToken = JSON.stringify(res.data) ;
 
+var myData = {
+  val1:hash,
+  val2:zash,
+  val3:myValue
+}
+
+var mydata = JSON.stringify(myData);
+
 
  return {
            statusCode : 200 ,
-           body : myToken
+           body : mydata
          };
 
 
