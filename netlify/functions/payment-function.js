@@ -34,7 +34,7 @@ encodedParams.set('hash', hash);
 
 const options = {
   method: 'POST',
-  url: 'https://testpay.easebuzz.in',
+  url: 'https://testpay.easebuzz.in/payment/initiateLink',
   headers: {
     'Content-Type': 'application/x-www-form-urlencoded',
      Accept: 'application/json'
