@@ -46,7 +46,7 @@ const options = {
 
  return {
            statusCode : 200 ,
-           body : JSON.stringify(res) 
+           body : res 
          };
 
 
