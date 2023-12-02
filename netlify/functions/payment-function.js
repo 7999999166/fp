@@ -15,6 +15,9 @@ var myValue = key+'|'+txnid+'|'+amount+'|'+productinfo+'|'+firstname+'|'+phone+'
 var hash = sha512.sha512(myValue);
 
 
+exports.handler = async function (event,res){
+
+
 const encodedParams = new URLSearchParams();
 encodedParams.set('key', key);
 encodedParams.set('txnid', txnid);
@@ -28,8 +31,6 @@ encodedParams.set('furl', 'https://akhilsteel.in/payment');
 encodedParams.set('hash', hash);
 
 
-
-exports.handler = async function (event,res){
 
 const options = {
   method: 'POST',
