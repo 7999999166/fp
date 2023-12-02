@@ -11,7 +11,7 @@ var firstname = 'sandeep' ;
 var phone = '9090909090';
 var email = 'mahesh@gmail.com' ;
 var salt = process.env.SALT ;
-var myValue = key+'|'+txnid+'|'+amount+'|'+productinfo+'|'+firstname+'|'+phone+'|'+email+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+'|'+salt ;
+var myValue = key+'|'+txnid+'|'+amount+'|'+productinfo+'|'+firstname+'|'+phone+'|'+email+'|'+salt ;
 var hash = crypto.createHash('sha512').update(myValue).digest('hex');
 
 
@@ -28,7 +28,7 @@ encodedParams.set('phone', phone);
 encodedParams.set('email',email);
 encodedParams.set('surl', 'https://akhilsteel.in');
 encodedParams.set('furl', 'https://akhilsteel.in/payment');
-encodedParams.set('hash', '4d22fb6a979c63c28d3ab61aeefd7f1543a1138b4b73410c807dfe8368b3bd1653f746ad0650d3a59e2b4f7e945c1c37e4b107bee929babbc7f309d935c3a2dc' );
+encodedParams.set('hash', hash );
 
 
 
