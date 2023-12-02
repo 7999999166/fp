@@ -28,7 +28,7 @@ encodedParams.set('phone', phone);
 encodedParams.set('email',email);
 encodedParams.set('surl', 'https://akhilsteel.in');
 encodedParams.set('furl', 'https://akhilsteel.in/payment');
-encodedParams.set('hash', hash );
+encodedParams.set('hash', 'c86e03a5f14c11ef43ebf422a631106c727b66abda0acd121ecc14df8be4819c876f13bfe407ca4d6085dae94c363c04021df094e6c5bb97497b28c07871a163' );
 
 
 
