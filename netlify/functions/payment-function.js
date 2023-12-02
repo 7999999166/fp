@@ -43,11 +43,15 @@ const options = {
   data: encodedParams,
 };
 
-//  res = await axios.request(options);
+ res = await axios.request(options);
 
  return {
            statusCode : 200 ,
-           body : JSON.stringify(zash) 
+           headers: {
+           'Access-Control-Allow-Origin': '*',
+           'Access-Control-Allow-Credentials': true
+           },
+           body : JSON.stringify(res) 
          };
 
 
