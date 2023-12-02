@@ -55,7 +55,7 @@ const options = {
 };
 
 res = await axios.request(options) ;
-var myToken = JSON.stringify(res.data.data) ;
+var myToken = JSON.stringify(res.data) ;
 
 var myData = {
   val1:hashString,
