@@ -23,7 +23,7 @@ var udf9 ='' ;
 var udf10 ='' ;
 
 
-var myValue = key+'|'+txnid+'|'+amount+'|'+productinfo+'|'+firstname+'|'+phone+'|'+email+'|'+udf1+'|'+udf2+'|'+udf3+'|'+udf4+'|'+udf5+'|'+udf6+'|'+udf7+'|'+udf8+'|'+udf9+'|'+udf10+'|'+salt ;
+var myValue = key+'|'+txnid+'|'+amount+'|'+productinfo+'|'+firstname+'|'+email+'|'+udf1+'|'+udf2+'|'+udf3+'|'+udf4+'|'+udf5+'|'+udf6+'|'+udf7+'|'+udf8+'|'+udf9+'|'+udf10+'|'+salt ;
 var hashString = crypto.createHash('sha512').update(myValue).digest('hex');
 
 
