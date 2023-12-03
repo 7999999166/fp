@@ -37,6 +37,7 @@
 </script>
 
 <svelte:head>
+       <script src="https://ebz-static.s3.ap-south-1.amazonaws.com/easecheckout/easebuzz-checkout.js"></script>
        <script src="/bootstrap.bundle.min.js"></script> 
        <link rel="stylesheet" href="/bootstrap.min.css"> 
        <link rel="stylesheet" href="/w3.css"> 

@@ -8,7 +8,6 @@ var txnid = 'brai3455670237';
 var amount = 2400.25 ;
 var productinfo = 'appleWatch' ;
 var firstname = 'sandeep' ;
-var phone = 9090909090;
 var email = 'mahesh@gmail.com' ;
 var salt = process.env.SALT ;
 var udf1 ='' ;
@@ -21,6 +20,7 @@ var udf7 ='' ;
 var udf8 ='' ;
 var udf9 ='' ;
 var udf10 ='' ;
+var phone = 9090909090;
 
 
 var myValue = key+'|'+txnid+'|'+amount+'|'+productinfo+'|'+firstname+'|'+email+'|'+udf1+'|'+udf2+'|'+udf3+'|'+udf4+'|'+udf5+'|'+udf6+'|'+udf7+'|'+udf8+'|'+udf9+'|'+udf10+'|'+salt ;
@@ -57,17 +57,11 @@ const options = {
 res = await axios.request(options) ;
 var myToken = JSON.stringify(res.data) ;
 
-var myData = {
-  val1:hashString,
-  val3:myValue
-}
-
-var mydata = JSON.stringify(myData);
-
 
  return {
            statusCode : 200 ,
            body : myToken
+           
          };
 
 
