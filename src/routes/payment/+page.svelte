@@ -7,7 +7,7 @@
 
        var easebuzzCheckout = new EasebuzzCheckout( '1VS97REYKV', 'prod' )
        var options = {
-           access_key: '34aeb6887c66ed5968d5d92334cad7c5534b8b75636134f31e384fd5d2a77352', // access key received via Initiate Payment
+           access_key: '2aee2811275c387d9f32963a84159eb8fd50b7a71520871291345f7488777596', // access key received via Initiate Payment
            onResponse: (response) => {
                console.log(response);
            },
