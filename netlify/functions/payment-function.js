@@ -4,7 +4,7 @@ var crypto = require('crypto') ;
 
 
 var key = process.env.KEY ;
-var txnid = 'braitsch00237';
+var txnid = 'brai3455670237';
 var amount = 2400.25 ;
 var productinfo = 'appleWatch' ;
 var firstname = 'sandeep' ;
