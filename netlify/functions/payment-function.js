@@ -4,7 +4,7 @@ var crypto = require('crypto') ;
 
 
 var key = process.env.KEY ;
-var txnid = 'brai3455670237';
+var txnid = 'br098i3455670237';
 var amount = 2400.25 ;
 var productinfo = 'appleWatch' ;
 var firstname = 'sandeep' ;
@@ -61,7 +61,7 @@ var myToken = JSON.stringify(res.data) ;
  return {
            statusCode : 200 ,
            body : myToken
-           
+
          };
 
 
