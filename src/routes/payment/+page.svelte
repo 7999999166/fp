@@ -4,11 +4,11 @@
 
 
      async function myMtain () {
-      
+
       var easebuzzCheckout = new EasebuzzCheckout( '1VS97REYKV', 'prod' )
 
        var options = {
-           access_key: 'fd55c8d87b0d147b40542b59ff8c55b0d3c263497a3cdce795bf0238f7e3bc54', // access key received via Initiate Payment
+           access_key: '34aeb6887c66ed5968d5d92334cad7c5534b8b75636134f31e384fd5d2a77352', // access key received via Initiate Payment
            onResponse: (response) => {
                console.log(response);
            },
